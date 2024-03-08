@@ -1,0 +1,13 @@
+//Comandos Uteis
+dotnet new sln --name TemplateDDD.Service
+dotnet sln add Curso_DDD_API_NetCore.Application
+dotnet add Curso_DDD_API_NetCore.Data reference Curso_DDD_API_NetCore.Domain
+dotnet ef migrations add UserMigrations
+dotnet ef database update
+
+//Gerar migrations atual
+dotnet ef migrations add start -s TemplateDDD.WebApi/TemplateDDD.WebApi.csproj -p TemplateDDD.Infra/TemplateDDD.Infra.csproj
+dotnet ef database update start -s TemplateDDD.WebApi/TemplateDDD.WebApi.csproj -p TemplateDDD.Infra/TemplateDDD.Infra.csproj
+
+// Gerar Template
+dotnet new templateDDD -o "nomeDoProjeto"   

@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "John Duque",
+    "classifications": [ "Web", "WebAPI", "Solution" ],
+    "identity": "TemplateDDD",
+    "name": "TemplateDDD v1",
+    "shortName": "webapi-ddd",
+    "sourceName": "TemplateDDD",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "preferNameDirectory": true
+  }
